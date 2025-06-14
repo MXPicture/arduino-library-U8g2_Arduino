@@ -45,7 +45,7 @@
 #ifndef U8G2LIB_HH
 #define U8G2LIB_HH
 
-#ifdef ARDUINO || defined(EPOXY_DUINO)
+#if defined(ARDUINO) || defined(EPOXY_DUINO)
 #include <Arduino.h>
 #include <Print.h>
 #endif
@@ -55,7 +55,7 @@
 #include "clib/u8g2.h"
 
 class U8G2
-#ifdef ARDUINO || defined(EPOXY_DUINO)
+#if defined(ARDUINO) || defined(EPOXY_DUINO)
 : public Print
 #endif
 {
